@@ -1,0 +1,130 @@
+
+body {
+  margin: 0;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("./assets/tech.avif");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero-title,
+.hero-text,
+.section h2,
+.section p {
+  color: white;
+}
+.portfolio {
+  min-height: 100vh;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-image: ;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hero-title {
+  color: #0f0c0c;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  color: #646cff;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  
+}
+
+.btn-primary {
+  background: #646cff;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.btn-secondary {
+  border: 1px solid #646cff;
+  color: #fff;
+
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.skills-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skill-badge {
+  padding: 8px 14px;
+  background: #646cff;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+.project-card h3{
+color: #646cff;
+}
+#contact{
+  text-align: center;
+}
+.contact-title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: #646cff;
+  font-weight: 600;
+}
