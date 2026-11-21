@@ -69,60 +69,53 @@ export default function Navbar() {
         </button>
       </nav>
 
+      
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="mobile-menu">
-          <Link
-            to="/"
-            className="mobile-nav-link"
-            onClick={() => setIsOpen(false)}
-          >
-            Home
-          </Link>
+{isOpen && (
+  <div className="mobile-menu">
+    <Link
+      to="/"
+      className="mobile-nav-link"
+      onClick={() => setIsOpen(false)}
+    >
+      Home
+    </Link>
 
-          <Link
-            to="/about"
-            className="mobile-nav-link"
-            onClick={() => setIsOpen(false)}
-          >
-            About
-          </Link>
+    <Link
+      to="/about"
+      className="mobile-nav-link"
+      onClick={() => setIsOpen(false)}
+    >
+      About
+    </Link>
 
-          <Link
-            to="/"
-            className="mobile-nav-link"
-            onClick={() => setIsOpen(false)}
-          >
-            Projects
-          </Link>
+    <Link
+      to="/"
+      className="mobile-nav-link"
+      onClick={() => setIsOpen(false)}
+    >
+      Projects
+    </Link>
 
-          <Link
-            to="/"
-            className="mobile-nav-link"
-            onClick={() => setIsOpen(false)}
-          >
-            Skills
-          </Link>
+    <Link
+      to="/contact"
+      className="mobile-nav-link"
+      onClick={() => setIsOpen(false)}
+    >
+      Contact
+    </Link>
 
-          <Link
-            to="/"
-            className="mobile-nav-link"
-            onClick={() => setIsOpen(false)}
-          >
-            Contact
-          </Link>
-
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mobile-resume-btn"
-            onClick={() => setIsOpen(false)}
-          >
-            Resume
-          </a>
-        </div>
-      )}
+    <a
+      href="/resume.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mobile-resume-btn"
+      onClick={() => setIsOpen(false)}
+    >
+      Resume
+    </a>
+  </div>
+)}
     </header>
   );
 }
