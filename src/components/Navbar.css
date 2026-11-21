@@ -1,0 +1,89 @@
+.navbar-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navbar-header.scrolled {
+  backdrop-filter: blur(12px);
+  background: rgba(15, 23, 42, 0.9);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-brand span {
+  color: #38bdf8;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #38bdf8;
+}
+
+.nav-resume-btn {
+  background: #38bdf8;
+  color: white;
+  padding: 0.7rem 1.3rem;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .mobile-menu {
+    background: #648deb;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100px;
+  }
+
+  .mobile-nav-link,
+  .mobile-resume-btn {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 0;
+  }
+}
